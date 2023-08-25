@@ -1,0 +1,208 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-page {
+  background: linear-gradient(270deg, #a5deff 0%, #fcfefe 100%);
+}
+
+.main-page-text-container {
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 60px;
+}
+
+.main-page-button {
+  background: #ff6b0a;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 24px 12px 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 32px;
+  margin-bottom: 60px;
+}
+
+.main-page-description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1d1f;
+  margin-bottom: 60px;
+  margin-top: 0;
+}
+
+.main-page-title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  color: #1b1d1f;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-page-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1d1f;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.gus-facts {
+  padding-top: 48px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.tryzub {
+  margin-bottom: 24px;
+}
+
+.gus-facts-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  color: #1b1d1f;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.gus-facts-description {
+  width: 772px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1d1f;
+}
+
+.gus-fact-item-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1b1d1f;
+  margin-bottom: 32px;
+  margin-top: 8px;
+}
+
+.gus-fact-item-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1d1f;
+}
+
+.gus-fact-item {
+  width: 374px;
+}
+
+.form-section {
+  background: linear-gradient(270deg, #a5deff 0%, #fcfefe 100%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.form-container {
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 32px 60px 60px 60px;
+  width: 573px;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.form-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1b1d1f;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.form-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1d1f;
+  margin-bottom: 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.form-field-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1d1f;
+  margin-bottom: 8px;
+}
+
+.form-field-email {
+  margin-bottom: 48px;
+}
+
+.form-field-input {
+  height: 60px;
+  width: 453px;
+  border: 1px solid #005bbb;
+  outline: none;
+  border-radius: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1d1f;
+}
+
+.form-button {
+  background: #ff6b0a;
+  border-radius: 8px;
+  padding: 12px 24px 12px 24px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+} 
+
+.gus-anim {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
