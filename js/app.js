@@ -2,6 +2,7 @@ const form = document.querySelector("#form");
 const launchBtn = document.querySelector("#launch-btn");
 const goToFormButton = document.querySelector("#go-to-form-btn");
 const userEmailField = document.querySelector("#user-email");
+const userNameField = document.querySelector("#user-name");
 
 goToFormButton.addEventListener("click", function (e) {
   e.preventDefault();
@@ -9,7 +10,7 @@ goToFormButton.addEventListener("click", function (e) {
 });
 
 function clearFormFields() {
-  const modalFiends = formModal.querySelectorAll("input");
+  const modalFiends = document.querySelectorAll("input");
 
   modalFiends.forEach((field) => {
     field.value = " ";
@@ -36,9 +37,20 @@ form.addEventListener("submit", (e) => {
 
   launchBtn.setAttribute("disabled", true);
 
-  if (userEmailField?.value?.length > 30) {
+  if (userNameField?.value?.length > 10) {
+    alert("Name must have less then 10 characters!");
     return;
   }
+
+  if (userEmailField?.value?.length > 20) {
+    alert("Email must have less then 20 characters!");
+    return;
+  }
+
+  // if (!userEmailField?.value?.length.split("").includes("@")) {
+  //   alert("Email must have less then 20 characters!");
+  //   return;
+  // }
 
   fetch("/", {
     method: "POST",
@@ -51,7 +63,7 @@ form.addEventListener("submit", (e) => {
       setTimeout(() => {
         launchBtn.removeAttribute("disabled");
         clearFormFields();
-      }, 2000);
+      }, 200);
     })
     .catch((error) => console.log("Sending form failed"));
 });
